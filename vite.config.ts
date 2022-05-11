@@ -9,8 +9,8 @@ const pathResolve = (dir: string): string => {
 
 // 路径别名
 const alias: Record<string, string> = {
-    '/@/': pathResolve('src'),
-    '/#/': pathResolve('build'),
+    '/@': pathResolve('src'),
+    // '/#': pathResolve('build'),
 };
 // 开发服务器
 const server: ServerOptions = {
@@ -24,6 +24,7 @@ export default defineConfig((): UserConfig => {
         resolve: {
             // 别名
             alias,
+            extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
         },
         // 插件列表
         plugins: getPluginsList(),

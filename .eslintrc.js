@@ -52,6 +52,38 @@ module.exports = {
     // 添加vue和@typescript-eslint插件，增强eslint的能力
     plugins: ['vue', '@typescript-eslint'],
     rules: {
+        'vue/no-v-html': 'off',
+        'vue/require-default-prop': 'off',
+        'vue/require-explicit-emits': 'off',
         'vue/multi-word-component-names': 'off',
+        '@typescript-eslint/no-explicit-any': 'off', // any
+        'no-debugger': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off', // setup()
+        '@typescript-eslint/ban-types': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/no-empty-function': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            {
+                argsIgnorePattern: '^_',
+                varsIgnorePattern: '^_',
+            },
+        ],
+        'no-unused-vars': [
+            'error',
+            {
+                argsIgnorePattern: '^_',
+                varsIgnorePattern: '^_',
+            },
+        ],
+        'prettier/prettier': 2, // 这项配置 对于不符合prettier规范的写法，eslint会提示报错
+        // eslint-disable-next-line no-dupe-keys
+        'prettier/prettier': [
+            'error',
+            {
+                endOfLine: 'auto',
+            },
+        ],
     },
 };
