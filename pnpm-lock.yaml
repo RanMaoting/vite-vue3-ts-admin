@@ -5,6 +5,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.23.0
   '@typescript-eslint/parser': ^5.23.0
   '@vitejs/plugin-vue': ^2.3.1
+  '@vueuse/core': ^8.4.2
   eslint: ^8.15.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.0.0
@@ -20,6 +21,7 @@ specifiers:
   vue-tsc: ^0.34.7
 
 dependencies:
+  '@vueuse/core': registry.npmmirror.com/@vueuse/core/8.4.2_vue@3.2.33
   pinia: registry.npmmirror.com/pinia/2.0.14_typescript@4.6.4+vue@3.2.33
   vue: registry.npmmirror.com/vue/3.2.33
   vue-router: registry.npmmirror.com/vue-router/4.0.15_vue@3.2.33
@@ -433,6 +435,50 @@ packages:
     resolution: {integrity: sha512-UBc1Pg1T3yZ97vsA2ueER0F6GbJebLHYlEi4ou1H5YL4KWvMOOWwpYo9/QpWq93wxKG6Wo13IY74Hcn/f7c7Bg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/shared/-/shared-3.2.33.tgz}
     name: '@vue/shared'
     version: 3.2.33
+
+  registry.npmmirror.com/@vueuse/core/8.4.2_vue@3.2.33:
+    resolution: {integrity: sha512-dUVU96lii1ZdWoNJXauQNt+4QrHz1DKbuW+y6pDR2N10q7rGZJMDU7pQeMcC2XeosX7kMODfaBuqsF03NozzLg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/core/-/core-8.4.2.tgz}
+    id: registry.npmmirror.com/@vueuse/core/8.4.2
+    name: '@vueuse/core'
+    version: 8.4.2
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@vueuse/metadata': registry.npmmirror.com/@vueuse/metadata/8.4.2
+      '@vueuse/shared': registry.npmmirror.com/@vueuse/shared/8.4.2_vue@3.2.33
+      vue: registry.npmmirror.com/vue/3.2.33
+      vue-demi: registry.npmmirror.com/vue-demi/0.12.5_vue@3.2.33
+    dev: false
+
+  registry.npmmirror.com/@vueuse/metadata/8.4.2:
+    resolution: {integrity: sha512-2BIj++7P0/I5dfMsEe8q7Kw0HqVAjVcyNOd9+G22/ILUC9TVLTeYOuJ1kwa1Gpr+0LWKHc6GqHiLWNL33+exoQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/metadata/-/metadata-8.4.2.tgz}
+    name: '@vueuse/metadata'
+    version: 8.4.2
+    dev: false
+
+  registry.npmmirror.com/@vueuse/shared/8.4.2_vue@3.2.33:
+    resolution: {integrity: sha512-hILXMEjL8YQhj1LHN/HZ49UThyfk8irTjhele2nW+L3N55ElFUBGB/f4w0rg8EW+/suhqv7kJJPTZzvHCqxlIw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/shared/-/shared-8.4.2.tgz}
+    id: registry.npmmirror.com/@vueuse/shared/8.4.2
+    name: '@vueuse/shared'
+    version: 8.4.2
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      vue: registry.npmmirror.com/vue/3.2.33
+      vue-demi: registry.npmmirror.com/vue-demi/0.12.5_vue@3.2.33
+    dev: false
 
   registry.npmmirror.com/acorn-jsx/5.3.2_acorn@8.7.1:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz}
