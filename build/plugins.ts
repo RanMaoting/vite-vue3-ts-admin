@@ -15,6 +15,7 @@ export default function getPluginsList(): PluginOption[] {
         }),
         Unocss({
             presets: [presetAttributify(), presetUno()],
+            // mode: 'vue-scoped',
         }),
     ];
 }

@@ -1,4 +1,8 @@
 import { createApp } from 'vue';
+
+import 'uno.css';
+import 'normalize.css';
+
 import App from './App.vue';
 import store from './store';
 import router from './router';

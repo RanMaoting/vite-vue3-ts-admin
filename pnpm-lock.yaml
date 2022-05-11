@@ -12,6 +12,7 @@ specifiers:
   eslint-plugin-vue: ^8.7.1
   husky: ^8.0.1
   lint-staged: ^12.4.1
+  normalize.css: ^8.0.1
   pinia: ^2.0.14
   prettier: ^2.6.2
   typescript: ^4.5.4
@@ -23,6 +24,7 @@ specifiers:
 
 dependencies:
   '@vueuse/core': registry.npmmirror.com/@vueuse/core/8.4.2_vue@3.2.33
+  normalize.css: 8.0.1
   pinia: registry.npmmirror.com/pinia/2.0.14_typescript@4.6.4+vue@3.2.33
   vue: registry.npmmirror.com/vue/3.2.33
   vue-router: registry.npmmirror.com/vue-router/4.0.15_vue@3.2.33
@@ -720,6 +722,10 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /normalize.css/8.0.1:
+    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
+    dev: false
 
   /npm-run-path/4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
