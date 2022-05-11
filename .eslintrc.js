@@ -4,8 +4,35 @@ module.exports = {
         browser: true,
         es2021: true,
         node: true,
-        // 开启setup语法糖环境
-        'vue/setup-compiler-macros': true,
+    },
+    globals: {
+        // Ref sugar (take 2)
+        $: 'readonly',
+        $$: 'readonly',
+        $ref: 'readonly',
+        $shallowRef: 'readonly',
+        $computed: 'readonly',
+
+        // index.d.ts
+        // global.d.ts
+        Fn: 'readonly',
+        PromiseFn: 'readonly',
+        RefType: 'readonly',
+        LabelValueOptions: 'readonly',
+        EmitType: 'readonly',
+        TargetContext: 'readonly',
+        ComponentElRef: 'readonly',
+        ComponentRef: 'readonly',
+        ElRef: 'readonly',
+        global: 'readonly',
+        ForDataType: 'readonly',
+        ComponentRoutes: 'readonly',
+
+        // script setup
+        defineProps: 'readonly',
+        defineEmits: 'readonly',
+        defineExpose: 'readonly',
+        withDefaults: 'readonly',
     },
     // 继承eslint推荐的规则集，vue基本的规则集，typescript的规则集
     extends: [
