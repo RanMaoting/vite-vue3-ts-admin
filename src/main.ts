@@ -1,4 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import store from './store';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+// 挂载pinia
+app.use(store);
+// 挂载实例
+app.mount('#app');
