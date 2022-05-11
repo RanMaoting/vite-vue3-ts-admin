@@ -1,16 +1,16 @@
-import { resolve } from "path";
-import { defineConfig, UserConfig, ServerOptions } from "vite";
-import getPluginsList from "./build/plugins";
+import { resolve } from 'path';
+import { defineConfig, UserConfig, ServerOptions } from 'vite';
+import getPluginsList from './build/plugins';
 
 // 使用node转换路径
 const pathResolve = (dir: string): string => {
-    return resolve(__dirname, ".", dir);
+    return resolve(__dirname, '.', dir);
 };
 
 // 路径别名
 const alias: Record<string, string> = {
-    "/@/": pathResolve("src"),
-    "/#/": pathResolve("build"),
+    '/@/': pathResolve('src'),
+    '/#/': pathResolve('build'),
 };
 // 开发服务器
 const server: ServerOptions = {

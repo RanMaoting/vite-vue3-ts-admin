@@ -2,8 +2,8 @@
  * @file vite配置列表
  */
 
-import { PluginOption } from "vite";
-import vue from "@vitejs/plugin-vue";
+import { PluginOption } from 'vite';
+import vue from '@vitejs/plugin-vue';
 
 export default function getPluginsList(): PluginOption[] {
     return [

@@ -1,0 +1,9 @@
+<template>
+    <div>qweqwe</div>
+</template>
+
+<script setup lang="ts">
+import {} from 'vue';
+</script>
+
+<style scoped></style>
