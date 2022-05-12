@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 
 import 'uno.css';
-import '@unocss/reset/antfu.css';
+import '@unocss/reset/tailwind.css';
 
 import App from './App.vue';
 import store from './store';
