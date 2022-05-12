@@ -4,6 +4,7 @@ specifiers:
   '@types/node': ^17.0.32
   '@typescript-eslint/eslint-plugin': ^5.23.0
   '@typescript-eslint/parser': ^5.23.0
+  '@unocss/reset': ^0.33.2
   '@vitejs/plugin-vue': ^2.3.1
   '@vueuse/core': ^8.4.2
   eslint: ^8.15.0
@@ -12,7 +13,6 @@ specifiers:
   eslint-plugin-vue: ^8.7.1
   husky: ^8.0.1
   lint-staged: ^12.4.1
-  normalize.css: ^8.0.1
   pinia: ^2.0.14
   prettier: ^2.6.2
   typescript: ^4.5.4
@@ -23,8 +23,8 @@ specifiers:
   vue-tsc: ^0.34.7
 
 dependencies:
+  '@unocss/reset': registry.npmjs.org/@unocss/reset/0.33.2
   '@vueuse/core': registry.npmmirror.com/@vueuse/core/8.4.2_vue@3.2.33
-  normalize.css: 8.0.1
   pinia: registry.npmmirror.com/pinia/2.0.14_ytvqwwdyss532bvoq2clv4ed5m
   vue: registry.npmmirror.com/vue/3.2.33
   vue-router: registry.npmmirror.com/vue-router/4.0.15_vue@3.2.33
@@ -192,10 +192,6 @@ packages:
     dependencies:
       '@unocss/core': 0.33.2
       '@unocss/preset-mini': 0.33.2
-    dev: true
-
-  /@unocss/reset/0.33.2:
-    resolution: {integrity: sha512-ArrkGVr8OEfCHZ5p3IiCi2sv5qXRJZ45zzhCr6vuwP+7+RbgMiyDKhV5oYqIGu7oxFesgXxeD+nRe/v4tKL33g==}
     dev: true
 
   /@unocss/scope/0.33.2:
@@ -535,10 +531,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /normalize.css/8.0.1:
-    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
-    dev: false
-
   /npm-run-path/4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
     engines: {node: '>=8'}
@@ -702,7 +694,7 @@ packages:
       '@unocss/preset-uno': 0.33.2
       '@unocss/preset-web-fonts': 0.33.2
       '@unocss/preset-wind': 0.33.2
-      '@unocss/reset': 0.33.2
+      '@unocss/reset': registry.npmjs.org/@unocss/reset/0.33.2
       '@unocss/transformer-compile-class': 0.33.2
       '@unocss/transformer-directives': 0.33.2
       '@unocss/transformer-variant-group': 0.33.2
@@ -760,6 +752,11 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': registry.npmjs.org/@babel/helper-validator-identifier/7.16.7
       to-fast-properties: registry.npmjs.org/to-fast-properties/2.0.0
+
+  registry.npmjs.org/@unocss/reset/0.33.2:
+    resolution: {integrity: sha512-ArrkGVr8OEfCHZ5p3IiCi2sv5qXRJZ45zzhCr6vuwP+7+RbgMiyDKhV5oYqIGu7oxFesgXxeD+nRe/v4tKL33g==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@unocss/reset/-/reset-0.33.2.tgz}
+    name: '@unocss/reset'
+    version: 0.33.2
 
   registry.npmjs.org/esbuild-android-64/0.14.38:
     resolution: {integrity: sha512-aRFxR3scRKkbmNuGAK+Gee3+yFxkTJO/cx83Dkyzo4CnQl/2zVSurtG6+G86EQIZ+w+VYngVyK7P3HyTBKu3nw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/esbuild-android-64/-/esbuild-android-64-0.14.38.tgz}
