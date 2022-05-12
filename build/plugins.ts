@@ -5,7 +5,6 @@
 import { PluginOption } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import Unocss from 'unocss/vite';
-import { presetAttributify, presetUno } from 'unocss';
 
 export default function getPluginsList(): PluginOption[] {
     return [
@@ -13,9 +12,6 @@ export default function getPluginsList(): PluginOption[] {
             // 开启是实验性质的响应性语法糖
             reactivityTransform: true,
         }),
-        Unocss({
-            presets: [presetAttributify(), presetUno()],
-            // mode: 'vue-scoped',
-        }),
+        Unocss(),
     ];
 }
