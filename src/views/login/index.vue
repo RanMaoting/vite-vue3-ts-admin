@@ -8,8 +8,10 @@
 </template>
 
 <script setup lang="ts">
-import {} from 'vue';
-import { NButton } from 'naive-ui';
+import { ref } from 'vue';
+
+const a = ref(11);
+a.value = 345;
 </script>
 
 <style scoped></style>

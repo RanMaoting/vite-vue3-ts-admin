@@ -30,6 +30,7 @@
     "types": [
       "node",
       "vite/client",
+      "naive-ui/volar"
     ],
     "typeRoots": [
       "./node_modules/@types/",
